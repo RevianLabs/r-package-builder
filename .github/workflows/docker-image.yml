@@ -7,15 +7,14 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  IMAGE_TAG: ${{ github.ref == 'refs/heads/master' && 'latest' || github.ref_name }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Determine image tag
-      env:
-        IMAGE_TAG: ${{ github.ref == 'refs/heads/master' && 'latest' || github.ref_name }}
-        
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: "docker build . --file Dockerfile --tag revianlabs/r-package-builder:$IMAGE_TAG"
