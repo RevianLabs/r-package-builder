@@ -1,5 +1,5 @@
 # Base image https://hub.docker.com/u/rocker/
-FROM --platform=linux/arm64 r-base:3.6.3
+FROM --platform=linux/amd64 r-base:3.6.3
 
 # system libraries of general use
 ## install debian packages
