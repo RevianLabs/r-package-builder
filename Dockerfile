@@ -10,13 +10,15 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install libxml2-dev
     libpq-dev \
     libssh2-1-dev \
     unixodbc-dev \
+    openssl \ 
     libcurl4-openssl-dev \
     libssl-dev \
     libgit2-dev \
     libharfbuzz-dev \
     libfribidi-dev \
     libtiff5-dev \
-    libsodium-dev
+    libsodium-dev \ 
+    openssh-client
     # libpng-dev \
     # libjpeg-dev \ 
     
