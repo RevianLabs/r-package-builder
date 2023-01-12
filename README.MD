@@ -1,3 +1,5 @@
+[![Docker Build](https://github.com/RevianLabs/r-package-builder/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/RevianLabs/r-package-builder/actions/workflows/docker-image.yml)
+
 # R Package Builder
 
 Docker image used to build R packages within a CI/CD pipeline.
